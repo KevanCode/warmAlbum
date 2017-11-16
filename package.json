@@ -1,0 +1,19 @@
+{
+  "name": "littlealbum",
+  "version": "1.0.0",
+  "description": "little album",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kevan",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "formidable": "^1.1.1",
+    "jquery": "^3.2.1",
+    "silly-datetime": "^0.1.2"
+  }
+}

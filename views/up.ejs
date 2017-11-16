@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>暖暖相册</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container h4 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">全部相册</a>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <form action="#" enctype="multipart/form-data" method="post">
+      <div class="form-group">
+        <label for="exampleInputEmail1">选择文件夹</label>
+        <select class="form-control" name="filename">
+          <% for(let i=0;i<albums.length;i++){%>
+            <option><%=albums[i]%></option>
+            <%}%>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">选择文件</label>
+        <input type="file" id="exampleInputFile" name="img">
+        <p class="help-block">图片大小不能大于2M</p>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+
+
+  </div>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
